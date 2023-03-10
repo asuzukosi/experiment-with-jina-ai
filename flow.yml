@@ -1,0 +1,9 @@
+jtype: Flow
+executors:
+  - uses: FrenchToEnglishTranslator
+    timeout_ready: -1
+    py_modules:
+      - translator_executor.py
+  - uses: jinaai://jina-ai/TextToImage
+    timeout_ready: -1
+    install_requirements: true

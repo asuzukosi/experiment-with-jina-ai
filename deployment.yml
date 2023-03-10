@@ -1,0 +1,6 @@
+jtype: Deployment
+with:
+  uses: FrenchToEnglishTranslator
+  py_modules:
+    - translator_executor.py # name of the module containing Translator
+  timeout_ready: -1
