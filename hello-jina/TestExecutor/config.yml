@@ -1,0 +1,8 @@
+jtype: TestExecutor
+py_modules:
+  - executor.py
+metas:
+  name: TestExecutor
+  description: 
+  url: 
+  keywords: []
