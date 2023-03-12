@@ -1,0 +1,47 @@
+service: service:svc
+name: default.amount_prediction
+version: ugrehggbf6jswgqc
+bentoml_version: 1.0.15
+creation_time: '2023-03-12T23:43:05.398534+00:00'
+labels: {}
+models:
+- tag: default.amount_prediction:ugrehggbf6jswgqc
+  module: bentoml.sklearn
+  creation_time: '2023-03-12T23:43:03.774921+00:00'
+runners:
+- name: default.amount_prediction
+  runnable_type: SklearnRunnable
+  models:
+  - default.amount_prediction:ugrehggbf6jswgqc
+  resource_config: null
+apis:
+- name: predict
+  input_type: JSON
+  output_type: JSON
+docker:
+  distro: debian
+  python_version: '3.10'
+  cuda_version: null
+  env: null
+  system_packages: null
+  setup_script: null
+  base_image: null
+  dockerfile_template: /Users/kosisochukwuasuzu/Developer/gsoc/jina-ai/example/.venv/lib/python3.10/site-packages/raptor/_internal/model_servers/sagemaker/template.j2
+python:
+  requirements_txt: null
+  packages:
+  - pandas==1.5.3
+  - scikit-learn==1.2.2
+  lock_packages: true
+  index_url: null
+  no_index: null
+  trusted_host: null
+  find_links: null
+  extra_index_url: null
+  pip_args: null
+  wheels: null
+conda:
+  environment_yml: null
+  channels: null
+  dependencies: null
+  pip: null
